@@ -24,24 +24,24 @@ const timelineData: Timeline[] = [
     label: "Today",
     timelines: [
       {
-        href: "tag-generator",
-        title: "Tag generator",
+        href: "social-media-manager",
+        title: "Social Media Manager",
       },
       {
-        href: "title-generator",
-        title: "Title generator",
+        href: "finance-tracker",
+        title: "Finance Tracker",
       },
       {
-        href: "image-editor",
-        title: "Image editor",
+        href: "recipe-creator",
+        title: "Recipe Creator",
       },
       {
-        href: "video-maker",
-        title: "Video maker",
+        href: "language-learning-app",
+        title: "Language Learning App",
       },
       {
-        href: "audio-mixer",
-        title: "Audio mixer",
+        href: "health-tracker",
+        title: "Health Tracker",
       },
     ],
   },
@@ -49,24 +49,24 @@ const timelineData: Timeline[] = [
     label: "Yesterday",
     timelines: [
       {
-        href: "article-editor",
-        title: "Article editor",
+        href: "budget-planner",
+        title: "Budget Planner",
       },
       {
-        href: "chart-generator",
-        title: "Chart generator",
+        href: "travel-itinerary-builder",
+        title: "Travel Itinerary Builder",
       },
       {
-        href: "diagram-creator",
-        title: "Diagram creator",
+        href: "habit-tracker",
+        title: "Habit Tracker",
       },
       {
-        href: "calendar-planner",
-        title: "Calendar planner",
+        href: "job-search-assistant",
+        title: "Job Search Assistant",
       },
       {
-        href: "task-tracker",
-        title: "Task tracker",
+        href: "meditation-guide",
+        title: "Meditation Guide",
       },
     ],
   },
@@ -74,24 +74,24 @@ const timelineData: Timeline[] = [
     label: "Last Week",
     timelines: [
       {
-        href: "code-editor",
-        title: "Code editor",
+        href: "virtual-event-platform",
+        title: "Virtual Event Platform",
       },
       {
-        href: "presentation-builder",
-        title: "Presentation builder",
+        href: "digital-sketchpad",
+        title: "Digital Sketchpad",
       },
       {
-        href: "music-composer",
-        title: "Music composer",
+        href: "resume-builder",
+        title: "Resume Builder",
       },
       {
-        href: "notebook-app",
-        title: "Notebook app",
+        href: "file-organizer",
+        title: "File Organizer",
       },
       {
-        href: "game-designer",
-        title: "Game designer",
+        href: "online-course-platform",
+        title: "Online Course Platform",
       },
     ],
   },
