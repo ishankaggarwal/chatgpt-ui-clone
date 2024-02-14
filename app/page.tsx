@@ -26,12 +26,9 @@ const cardData = [
 
 export default function Home() {
   return (
-    <main className="bg-[#171717] min-h-screen w-full flex flex-col justify-between">
+    <main className="bg-[#212121] min-h-screen w-full flex flex-col justify-between">
       <div className="p-4">
-        <Link
-          href="/"
-          className="w-fit hover:bg-zinc-900 text-lg text-[#ffffff]"
-        >
+        <Link href="/" className="hover:bg-zinc-900 text-lg text-[#ffffff]">
           ChatGPT <span className="text-[#cdcdcd]">3.5</span>
         </Link>
       </div>
@@ -45,7 +42,7 @@ export default function Home() {
 
       <section className="mt-10">
         <section className="max-w-3xl mx-auto flex flex-col">
-          <div className="grid grid-cols-2 gap-3">
+          <div className="sm:grid sm:grid-cols-1 md:grid md:grid-cols-2 gap-3">
             {cardData.map((d, i) => (
               <Card key={i} discription={d.description} heading={d.heading} />
             ))}
@@ -57,9 +54,9 @@ export default function Home() {
             <Input
               type="text"
               placeholder="Message ChatGPT..."
-              className="w-[800px] h-[52px] bg-inherit rounded-xl"
+              className="md:w-[750px] xl:w-[800px] h-[52px] bg-inherit rounded-xl"
             />
-            <button className=" text-black hover:opacity-80 bg-slate-500 w-fit rounded-xl p-3 absolute right-2 top-1 ">
+            <button className="text-black hover:opacity-80 bg-slate-500 rounded-xl p-3 absolute right-2 top-1">
               <FaArrowUp />
             </button>
           </div>

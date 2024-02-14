@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex w-full min-h-screen text-white">
+      <body className="flex w-full text-white">
         <Sidebar />
-        <div className="w-full min-h-screen">{children}</div>
+        <div className="w-full">{children}</div>
       </body>
     </html>
   );

@@ -106,16 +106,17 @@ export default function Sidebar() {
 
   return (
     <div
-      className={cn(
-        "hidden md:flex min-h-screen sm:min-h-screen lg:min-h-screen relative transition-all",
-        {
-          "-translate-x-full": !isVisible,
-          "w-full max-w-[244px]": isVisible,
-        }
-      )}
+      className={cn("hidden md:flex relative transition-all", {
+        "-translate-x-full": !isVisible,
+        "w-full max-w-[244px]": isVisible,
+      })}
     >
       {isVisible && (
-        <div className={cn("min-h-screen w-full pl-4 pr-6 pt-20 bg-[#0D0D0D]")}>
+        <div
+          className={cn(
+            "min-h-screen w-full pl-4 pr-6 pt-20 bg-[#171717] justify-between flex flex-col"
+          )}
+        >
           <div className="top-3 left-0 pl-4 pr-6 w-full absolute">
             <Link
               href={"/"}
@@ -131,7 +132,7 @@ export default function Sidebar() {
             </Link>
           </div>
 
-          <div className="w-full flex flex-col gap-5 max-h-[650px] overflow-auto mt-[3]">
+          <div className="w-full flex flex-col gap-5 sm:max-h-max xl:max-h-[650px] overflow-auto mt-[3]">
             {timelineData.map((d, i) => (
               <Timeline key={i} label={d.label} timelines={d.timelines} />
             ))}
