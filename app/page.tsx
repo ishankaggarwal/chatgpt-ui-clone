@@ -29,7 +29,9 @@ export default function Home() {
     <main className="bg-[#212121] min-h-screen w-full flex flex-col justify-between">
       <div className="p-4">
         <Link href="/" className="hover:bg-zinc-900 text-lg text-[#ffffff]">
-          ChatGPT <span className="text-[#cdcdcd]">3.5</span>
+          <div className="p-2 hover:bg-[#2f2f2f] w-fit rounded-lg">
+            ChatGPT <span className="text-[#cdcdcd]">3.5</span>
+          </div>
         </Link>
       </div>
 
@@ -54,9 +56,9 @@ export default function Home() {
             <Input
               type="text"
               placeholder="Message ChatGPT..."
-              className="md:w-[750px] xl:w-[800px] h-[52px] bg-inherit rounded-xl"
+              className="md:w-[750px] xl:w-[800px] h-[52px] bg-inherit rounded-xl border-[#4d4d4d] placeholder:text-[#8f8f8f]"
             />
-            <button className="text-black hover:opacity-80 bg-slate-500 rounded-xl p-3 absolute right-2 top-1">
+            <button className="text-black hover:opacity-80 bg-[#383838] rounded-xl p-3 absolute right-2 top-1">
               <FaArrowUp />
             </button>
           </div>
@@ -77,9 +79,9 @@ type CardProp = {
 
 function Card(props: CardProp) {
   return (
-    <button className="w-full hover:bg-slate-800 transition-all flex flex-col gap-1 p-3 text-sm font-semibold border border-gray-500 rounded-xl">
-      <h2>{props.heading}</h2>
-      <p className="text-gray-500">{props.discription}</p>
+    <button className="w-full hover:bg-[#2f2f2f] transition-all flex flex-col gap-1 p-3 text-sm font-semibold border border-[#424242] rounded-xl">
+      <h2 className="text-[#e9e9e9]">{props.heading}</h2>
+      <p className="text-[#707070]">{props.discription}</p>
     </button>
   );
 }
